@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.customcard.MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/customcard"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="William..."
+        android:textSize="36dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="@id/image"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintRight_toRightOf="@id/image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Att: Eric N."
+        android:textSize="36dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias=".9"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintBottom_toBottomOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="@id/image"
+        app:layout_constraintRight_toRightOf="@id/image"/>
+
+</android.support.constraint.ConstraintLayout>
